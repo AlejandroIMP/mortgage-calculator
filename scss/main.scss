@@ -1,0 +1,155 @@
+//Colors
+
+$color-primary-Lime: hsl(61, 70%, 52%);
+$color-secondary-Red: hsl(4, 69%, 50%);
+
+//Neutral
+
+$color-White: hsl(0, 0%, 100%);
+$color-Slate-100: hsl(202, 86%, 94%);
+$color-Slate-300: hsl(203, 41%, 72%);
+$color-Slate-500: hsl(200, 26%, 54%);
+$color-Slate-700: hsl(200, 24%, 40%);
+$color-Slate-900: hsl(202, 55%, 16%);
+$color-Black: hsl(0, 0%, 0%);
+
+//Font-size
+$paragraph-size: 16px;
+
+//Font-weight
+
+$weight-medium: 500;  
+$weight-large: 700;
+
+//Font-family
+
+$font-stack: 'Plus Jakarta Sans', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-stack;
+    background-color: $color-White;
+}
+
+.calculator--section{
+    padding: 20px;
+    h1{
+        font-size: $paragraph-size;
+        font-weight: $weight-large;
+        color: $color-Slate-900;
+        text-align: left;
+    }
+    .clear-button{
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+        color: $color-Slate-500;
+        font-size: 12px;
+        margin-bottom: 20px;
+        &:hover{
+            color: $color-Slate-700;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .input-text--form{
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            legend{
+                font-size: $paragraph-size;
+                font-weight: $weight-large;
+                color: $color-Slate-500;
+            }
+            div{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border: 1px solid $color-Slate-300;
+                min-width: 280px;
+                border-radius: 5px;
+                height: 50px;
+                position: relative;
+                label{
+                    padding: 14px;
+                    font-size: $paragraph-size;
+                    font-weight: $weight-large;
+                    color: $color-Slate-900;
+                    background-color: $color-Slate-100;
+                }
+                input{
+                    border: none;
+                    padding: 10px;
+                    font-size: $paragraph-size;
+                    font-weight: $weight-large;
+                    color: $color-Slate-900;
+                    width: 100%;
+                    border-radius: 5px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                &:focus-within{
+                    border: 1px solid $color-primary-Lime;
+                    transition: 1s ease;
+                    label{
+                        background-color: $color-primary-Lime;
+                        transition: 1s ease;
+                    }
+                }
+            }
+        }
+        .inputs-radio--form{
+            display: flex;
+            flex-direction: column;
+            border: none;
+            legend{
+                font-size: $paragraph-size;
+                font-weight: $weight-large;
+                color: $color-Slate-500;
+            }
+            div{
+                margin-top: 10px;
+                padding: 10px;
+                border: 1px solid $color-Slate-300;
+                border-radius: 5px;
+                input{
+                    margin-right: 10px;
+                    color: $color-primary-Lime;
+                    &:before{
+                        color: $color-primary-Lime;
+                    }
+                }
+                label{
+                    font-size: $paragraph-size;
+                    font-weight: $weight-large;
+                    color: $color-Slate-900;
+                }
+            }
+        }
+
+        button{
+            
+            background-color: $color-primary-Lime;
+            color: $color-White;
+            font-size: 20px;
+            font-weight: $weight-large;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-secondary-Red;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.calculator--section {
+  padding: 20px;
+}
+.calculator--section h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(202, 55%, 16%);
+  text-align: left;
+}
+.calculator--section .clear-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: hsl(200, 26%, 54%);
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.calculator--section .clear-button:hover {
+  color: hsl(200, 24%, 40%);
+}
+.calculator--section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.calculator--section form .input-text--form {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.calculator--section form .input-text--form legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(200, 26%, 54%);
+}
+.calculator--section form .input-text--form div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid hsl(203, 41%, 72%);
+  min-width: 280px;
+  border-radius: 5px;
+  height: 50px;
+  position: relative;
+}
+.calculator--section form .input-text--form div label {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(202, 55%, 16%);
+  background-color: hsl(202, 86%, 94%);
+}
+.calculator--section form .input-text--form div input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(202, 55%, 16%);
+  width: 100%;
+  border-radius: 5px;
+}
+.calculator--section form .input-text--form div input:focus {
+  outline: none;
+}
+.calculator--section form .input-text--form div:focus-within {
+  border: 1px solid hsl(61, 70%, 52%);
+  transition: 1s ease;
+}
+.calculator--section form .input-text--form div:focus-within label {
+  background-color: hsl(61, 70%, 52%);
+  transition: 1s ease;
+}
+.calculator--section form .inputs-radio--form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.calculator--section form .inputs-radio--form legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(200, 26%, 54%);
+}
+.calculator--section form .inputs-radio--form div {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid hsl(203, 41%, 72%);
+  border-radius: 5px;
+}
+.calculator--section form .inputs-radio--form div input {
+  margin-right: 10px;
+  color: hsl(61, 70%, 52%);
+}
+.calculator--section form .inputs-radio--form div input:before {
+  color: hsl(61, 70%, 52%);
+}
+.calculator--section form .inputs-radio--form div label {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(202, 55%, 16%);
+}
+.calculator--section form button {
+  background-color: hsl(61, 70%, 52%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.calculator--section form button:hover {
+  background-color: hsl(4, 69%, 50%);
+}/*# sourceMappingURL=main.css.map */
