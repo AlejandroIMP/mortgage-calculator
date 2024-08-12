@@ -101,16 +101,43 @@ body {
   border-radius: 5px;
 }
 .calculator--section form .inputs-radio--form div input {
-  margin-right: 10px;
-  color: hsl(61, 70%, 52%);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-.calculator--section form .inputs-radio--form div input:before {
-  color: hsl(61, 70%, 52%);
+.calculator--section form .inputs-radio--form div input {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid hsl(61, 70%, 52%);
+  vertical-align: -2px;
+  outline: none;
+}
+.calculator--section form .inputs-radio--form div input::before {
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: hsl(61, 70%, 52%);
+  font-size: 10px;
+  transform: translate(3px, 3px) scale(0);
+  transform-origin: center;
+  transition: all 0.3s ease-in;
+}
+.calculator--section form .inputs-radio--form div input:checked::before {
+  transform: translate(3px, 3px) scale(1);
+  transition: all 0.3s cubic-bezier(0.215, 0.25, 0.56, 2);
 }
 .calculator--section form .inputs-radio--form div label {
   font-size: 16px;
   font-weight: 700;
   color: hsl(202, 55%, 16%);
+}
+.calculator--section form .inputs-radio--form div:focus-within {
+  border: 1px solid hsl(61, 70%, 52%);
+  transition: 1s ease;
+  background: hsla(61, 70%, 52%, 0.259);
 }
 .calculator--section form button {
   background-color: hsl(61, 70%, 52%);
