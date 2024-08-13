@@ -14,12 +14,46 @@ body{
     background-color: $color-Slate-100;
 }
 
-
 main{
-    display: flex;
-    flex-direction: column;
-    
+    @include desktop{
+    display: grid;
+
+    height: 100vh;
+    .main--container{    
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            background-color: $color-White;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            .calculator--section{
+                margin: 0;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                form{
+                    article{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 10px;
+                        div{
+                            width: 100%;
+                            min-width: none;
+                        
+                        }
+
+                    }
+                }
+            }
+            .empty--results{
+                margin: 0;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 70px;
+            }
+        }    
+    }
 }
+
 
 
 .attribution{

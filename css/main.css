@@ -3,6 +3,7 @@
   max-width: 500px;
   margin: 0 auto;
   background-color: white;
+  height: 611px;
 }
 .calculator--section h1 {
   padding: 20px 20px 0 20px;
@@ -47,10 +48,10 @@
   flex-direction: row;
   align-items: center;
   border: 1px solid hsl(203, 41%, 72%);
-  min-width: 280px;
   border-radius: 5px;
   height: 50px;
   position: relative;
+  width: 100%;
 }
 .calculator--section form .input-text--form div label {
   padding: 14px;
@@ -164,9 +165,11 @@
 
 .empty--results {
   background-color: hsl(202, 55%, 16%);
+  margin: 0 auto;
   width: 100%;
   max-width: 500px;
   display: flex;
+  height: 611px;
 }
 .empty--results article {
   margin: 0 auto;
@@ -207,9 +210,39 @@ body {
   background-color: hsl(202, 86%, 94%);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1440px) {
+  main {
+    display: grid;
+    height: 100vh;
+  }
+  main .main--container {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  main .main--container .calculator--section {
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  main .main--container .calculator--section form article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  main .main--container .calculator--section form article div {
+    width: 100%;
+    min-width: none;
+  }
+  main .main--container .empty--results {
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 70px;
+  }
 }
 
 .attribution {

@@ -23,69 +23,72 @@
 </head>
 <body>
   <main>
-    <section class="calculator--section">
-      <h1>Mortgage calculator</h1>
-      <button class="clear-button" type="reset">Clear All</button>
-      <form>
-        <fieldset class="input-text--form">
-          <legend>Mortgage Amount</legend>
-          <div>
-            <label for="mortgage-amount">Q</label>
-            <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="" required>
-            <span class="error"></span>
-          </div>
-          
-        </fieldset>
-        <article>
+    <section class="main--container">
+      <section class="calculator--section">
+        <h1>Mortgage calculator</h1>
+        <button class="clear-button" type="reset">Clear All</button>
+        <form>
           <fieldset class="input-text--form">
-            <legend>Mortgage Term</legend>
+            <legend>Mortgage Amount</legend>
             <div>
-              <input type="number" id="mortgage-term" name="mortgage-term" placeholder="" required>
-              <label for="mortgage-term">years</label>
+              <label for="mortgage-amount">Q</label>
+              <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="" required>
               <span class="error"></span>
             </div>
+            
           </fieldset>
-          <fieldset class="input-text--form">
-            <legend>Interest Rate</legend>
-            <div>
-              <input type="number" id="interest-rate" name="interest-rate" placeholder="" required>
-            <label for="interest-rate">%</label>
-            <span class="error"></span>
-            </div>
-          </fieldset>
-        </article>
-      
-        <fieldset class="inputs-radio--form">
-          <legend>Mortgage Type</legend>
-            <div>
-              <input type="radio" id="repayment" name="mortgage-type" value="repayment" checked>
-              <label for ="repayment">Repayment</label>
+          <article>
+            <fieldset class="input-text--form">
+              <legend>Mortgage Term</legend>
+              <div>
+                <input type="number" id="mortgage-term" name="mortgage-term" placeholder="" required>
+                <label for="mortgage-term">years</label>
+                <span class="error"></span>
+              </div>
+            </fieldset>
+            <fieldset class="input-text--form">
+              <legend>Interest Rate</legend>
+              <div>
+                <input type="number" id="interest-rate" name="interest-rate" placeholder="" required>
+              <label for="interest-rate">%</label>
               <span class="error"></span>
-            </div>
-            <div>
-              <input type="radio" id="interest-only" name="mortgage-type" value="interest-only">
-              <label for="interest-only">Interest Only</label>
-            </div>
-          
-        </fieldset>
+              </div>
+            </fieldset>
+          </article>
         
-  
-        <button type="submit"><span></span>Calculate Repayments</button>
-      </form>
-    </section>
-  
-  
-    <!-- Empty results start -->
-  
-    <secton class="empty--results">
-      <article>
-            <img src="./assets/images/illustration-empty.svg">
-              <h2>Results shown here</h2>
+          <fieldset class="inputs-radio--form">
+            <legend>Mortgage Type</legend>
+              <div>
+                <input type="radio" id="repayment" name="mortgage-type" value="repayment" checked>
+                <label for ="repayment">Repayment</label>
+                <span class="error"></span>
+              </div>
+              <div>
+                <input type="radio" id="interest-only" name="mortgage-type" value="interest-only">
+                <label for="interest-only">Interest Only</label>
+              </div>
+            
+          </fieldset>
           
-              <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
-              
-      </article>
-    </secton> 
+    
+          <button type="submit"><span></span>Calculate Repayments</button>
+        </form>
+      </section>
+    
+    
+      <!-- Empty results start -->
+    
+      <secton class="empty--results">
+        <article>
+              <img src="./assets/images/illustration-empty.svg" alt="la imagen de un dibujo que contiene una calculadora, una tabla y un lapiz" loading="lazy">
+                <h2>Results shown here</h2>
+            
+                <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+                
+        </article>
+      </secton> 
+    </section>
+    
   </main>
   
 

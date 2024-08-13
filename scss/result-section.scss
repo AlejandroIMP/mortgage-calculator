@@ -2,10 +2,11 @@
 
 .empty--results{
     background-color: $color-Slate-900;
-    
+    margin: 0 auto;
     width: 100%;
     max-width: 500px;
     display: flex;
+    height: 611px;
     article{
         margin: 0 auto;
         width: 90%;
