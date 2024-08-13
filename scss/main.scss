@@ -1,35 +1,9 @@
 //imports
-
+@import "./variables.scss";
+@import "./desktop.scss";
 @import "./calculator-section.scss";
 @import "./result-section.scss";
-@import "./desktop.scss";
 
-//Colors
-
-$color-primary-Lime: hsl(61, 70%, 52%);
-$color-secondary-Red: hsl(4, 69%, 50%);
-
-//Neutral
-
-$color-White: hsl(0, 0%, 100%);
-$color-Slate-100: hsl(202, 86%, 94%);
-$color-Slate-300: hsl(203, 41%, 72%);
-$color-Slate-500: hsl(200, 26%, 54%);
-$color-Slate-700: hsl(200, 24%, 40%);
-$color-Slate-900: hsl(202, 55%, 16%);
-$color-Black: hsl(0, 0%, 0%);
-
-//Font-size
-$paragraph-size: 16px;
-
-//Font-weight
-
-$weight-medium: 500;  
-$weight-large: 700;
-
-//Font-family
-
-$font-stack: 'Plus Jakarta Sans', sans-serif;
 
 *{
     margin: 0;
@@ -38,7 +12,7 @@ $font-stack: 'Plus Jakarta Sans', sans-serif;
 }
 body{
     font-family: $font-stack;
-    background-color: $color-White;
+    background-color: $color-Slate-300;
 }
 
 

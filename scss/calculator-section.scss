@@ -1,7 +1,9 @@
+
 .calculator--section{
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    background-color: white;
     h1{
         padding: 20px 20px 0 20px;
         font-size: $paragraph-size;
@@ -147,6 +149,7 @@
             border: none;
             border-radius: 100vh;
             position: relative;
+            max-width: 350px;
             span{
                 width: 24px;
                 height: 24px;
