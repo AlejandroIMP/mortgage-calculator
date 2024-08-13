@@ -10,15 +10,19 @@ body {
 }
 
 .calculator--section {
-  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .calculator--section h1 {
+  padding: 20px 20px 0 20px;
   font-size: 16px;
   font-weight: 700;
   color: hsl(202, 55%, 16%);
   text-align: left;
 }
 .calculator--section .clear-button {
+  padding: 0 20px;
   background: none;
   border: none;
   cursor: pointer;
@@ -31,9 +35,10 @@ body {
   color: hsl(200, 24%, 40%);
 }
 .calculator--section form {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
 }
 .calculator--section form .input-text--form {
   border: none;
@@ -168,28 +173,42 @@ body {
 
 .empty--results {
   background-color: hsl(202, 55%, 16%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.empty--results article {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 20px;
   text-align: center;
 }
-.empty--results img {
+.empty--results article img {
   width: 250px;
   height: 250px;
   size-adjust: cover;
 }
-.empty--results h2 {
+.empty--results article h2 {
   font-size: 16px;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   margin-bottom: 20px;
 }
-.empty--results p {
+.empty--results article p {
   font-size: 16px;
   font-weight: 500;
   color: hsl(203, 41%, 72%);
   margin-bottom: 20px;
+}
+
+.attribution {
+  width: 90%;
+}
+.attribution p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

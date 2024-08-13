@@ -1,0 +1,34 @@
+
+.empty--results{
+    background-color: $color-Slate-900;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    article{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img{
+            width: 250px;
+            height: 250px;
+            size-adjust: cover;
+        }
+        h2{
+            font-size: $paragraph-size;
+            font-weight: $weight-large;
+            color: $color-White;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: $paragraph-size;
+            font-weight: $weight-medium;
+            color: $color-Slate-300;
+            margin-bottom: 20px;
+        }
+    }
+    
+}

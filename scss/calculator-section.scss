@@ -1,0 +1,164 @@
+.calculator--section{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    h1{
+        padding: 20px 20px 0 20px;
+        font-size: $paragraph-size;
+        font-weight: $weight-large;
+        color: $color-Slate-900;
+        text-align: left;
+    }
+    .clear-button{
+        padding: 0 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+        color: $color-Slate-500;
+        font-size: 12px;
+        margin-bottom: 20px;
+        &:hover{
+            color: $color-Slate-700;
+        }
+    }
+    form{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        .input-text--form{
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            legend{
+                font-size: $paragraph-size;
+                font-weight: $weight-large;
+                color: $color-Slate-500;
+            }
+            div{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border: 1px solid $color-Slate-300;
+                min-width: 280px;
+                border-radius: 5px;
+                height: 50px;
+                position: relative;
+                label{
+                    padding: 14px;
+                    font-size: $paragraph-size;
+                    font-weight: $weight-large;
+                    color: $color-Slate-900;
+                    background-color: $color-Slate-100;
+                }
+                input{
+                    border: none;
+                    padding: 10px;
+                    font-size: $paragraph-size;
+                    font-weight: $weight-large;
+                    color: $color-Slate-900;
+                    width: 100%;
+                    border-radius: 5px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                &:focus-within{
+                    border: 1px solid $color-primary-Lime;
+                    transition: 1s ease;
+                    label{
+                        background-color: $color-primary-Lime;
+                        transition: 1s ease;
+                    }
+                }
+            }
+        }
+        .inputs-radio--form{
+            display: flex;
+            flex-direction: column;
+            border: none;
+            legend{
+                font-size: $paragraph-size;
+                font-weight: $weight-large;
+                color: $color-Slate-500;
+            }
+            div{
+                margin-top: 10px;
+                padding: 10px;
+                border: 1px solid $color-Slate-300;
+                border-radius: 5px;
+                input{
+                    appearance: none;
+                }
+                input{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    border: 2px solid $color-primary-Lime;
+                    vertical-align: -2px;
+                    outline: none;
+
+                    &::before{
+                        content: ' ';
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                        background-color: $color-primary-Lime;
+                        font-size: 10px;
+                        transform: translate(3px, 3px) scale(0);
+                        transform-origin: center;
+                        transition: all 0.3s ease-in;
+                        
+                    }
+                    
+                }
+                input:checked::before{
+                    transform: translate(3px, 3px) scale(1);
+                    transition: all 0.3s cubic-bezier(0.215, 0.25, 0.56, 2);
+                }
+                label{
+                    font-size: $paragraph-size;
+                    font-weight: $weight-large;
+                    color: $color-Slate-900;
+                }
+                &:hover{
+                    border: 1px solid $color-primary-Lime;
+                }
+                &:focus-within{
+                    border: 1px solid $color-primary-Lime;
+                    transition: 1s ease;
+                    background: hsla(61, 70%, 52%, 0.259);
+                }
+            }
+        }
+
+        button{
+            margin: 20px 0;
+            padding: 20px 10px;
+            background-color: $color-primary-Lime;
+            font-size: $paragraph-size;
+            font-weight: $weight-large;
+            color: $color-Slate-900;
+            border: none;
+            border-radius: 100vh;
+            position: relative;
+            span{
+                width: 24px;
+                height: 24px;
+                display: block;
+                background-image: url('../assets/images/icon-calculator.svg');
+                position: absolute;
+                left: 30px;
+                top: 30%;
+            }
+            &:hover{
+                background-color: hsla(61, 70%, 52%, 0.34);
+            }
+        }
+    }
+}
