@@ -14,20 +14,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Mortgage repayment calculator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
+  
 </head>
 <body>
+  
   <main>
+    
     <section class="main--container">
       <section class="calculator--section">
         <h1>Mortgage calculator</h1>
-        <button class="clear-button" type="reset">Clear All</button>
+        
         <form>
+          <button class="clear-button" type="reset">Clear All</button>
           <fieldset class="input-text--form">
             <legend>Mortgage Amount</legend>
             <div>
@@ -71,8 +75,9 @@
           </fieldset>
           
     
-          <button type="submit"><span></span>Calculate Repayments</button>
+          <button class="button-calculate" type="button" onclick="handleClick()"><span></span>Calculate Repayments</button>
         </form>
+        
       </section>
     
     
@@ -88,7 +93,7 @@
         </article>
       </secton> 
     </section>
-    
+    <srcipt src="./main.js"></srcipt>
   </main>
   
 

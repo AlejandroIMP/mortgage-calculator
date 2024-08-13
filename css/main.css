@@ -12,8 +12,14 @@
   color: hsl(202, 55%, 16%);
   text-align: left;
 }
-.calculator--section .clear-button {
-  padding: 0 20px;
+.calculator--section form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.calculator--section form .clear-button {
+  padding: 10px 0;
   background: none;
   border: none;
   cursor: pointer;
@@ -21,15 +27,10 @@
   color: hsl(200, 26%, 54%);
   font-size: 12px;
   margin-bottom: 20px;
+  align-self: flex-start;
 }
-.calculator--section .clear-button:hover {
+.calculator--section form .clear-button:hover {
   color: hsl(200, 24%, 40%);
-}
-.calculator--section form {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
 }
 .calculator--section form .input-text--form {
   border: none;
@@ -138,7 +139,7 @@
   transition: 1s ease;
   background: hsla(61, 70%, 52%, 0.259);
 }
-.calculator--section form button {
+.calculator--section form .button-calculate {
   margin: 20px 0;
   padding: 20px 10px;
   background-color: hsl(61, 70%, 52%);
@@ -150,7 +151,7 @@
   position: relative;
   max-width: 350px;
 }
-.calculator--section form button span {
+.calculator--section form .button-calculate span {
   width: 24px;
   height: 24px;
   display: block;
@@ -159,7 +160,7 @@
   left: 30px;
   top: 30%;
 }
-.calculator--section form button:hover {
+.calculator--section form .button-calculate:hover {
   background-color: hsla(61, 70%, 52%, 0.34);
 }
 
@@ -227,6 +228,18 @@ body {
     margin: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+  }
+  main .main--container .calculator--section h1 {
+    margin-bottom: 20px;
+  }
+  main .main--container .calculator--section form {
+    position: relative;
+  }
+  main .main--container .calculator--section form .clear-button {
+    position: absolute;
+    margin-bottom: 20px;
+    right: 0;
+    top: -50px;
   }
   main .main--container .calculator--section form article {
     display: grid;

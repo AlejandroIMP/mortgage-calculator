@@ -30,7 +30,17 @@ main{
                 margin: 0;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
+                h1{
+                    margin-bottom: 20px;
+                }
                 form{
+                    position: relative;
+                    .clear-button{
+                        position: absolute;
+                        margin-bottom: 20px;
+                        right: 0;
+                        top: -50px;
+                    }
                     article{
                         display: grid;
                         grid-template-columns: 1fr 1fr;

@@ -13,20 +13,22 @@
         color: $color-Slate-900;
         text-align: left;
     }
-    .clear-button{
-        padding: 0 20px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        text-decoration: underline;
-        color: $color-Slate-500;
-        font-size: 12px;
-        margin-bottom: 20px;
-        &:hover{
-            color: $color-Slate-700;
-        }
-    }
+    
     form{
+        .clear-button{
+            padding: 10px 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+            color: $color-Slate-500;
+            font-size: 12px;
+            margin-bottom: 20px;
+            align-self: flex-start;
+            &:hover{
+                color: $color-Slate-700;
+            }
+        }
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -141,7 +143,7 @@
             }
         }
 
-        button{
+        .button-calculate{
             margin: 20px 0;
             padding: 20px 10px;
             background-color: $color-primary-Lime;
