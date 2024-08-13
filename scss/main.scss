@@ -158,7 +158,9 @@ body{
                     font-weight: $weight-large;
                     color: $color-Slate-900;
                 }
-
+                &:hover{
+                    border: 1px solid $color-primary-Lime;
+                }
                 &:focus-within{
                     border: 1px solid $color-primary-Lime;
                     transition: 1s ease;
@@ -168,17 +170,55 @@ body{
         }
 
         button{
-            
+            margin: 20px 0;
+            padding: 20px 10px;
             background-color: $color-primary-Lime;
-            color: $color-White;
-            font-size: 20px;
+            font-size: $paragraph-size;
             font-weight: $weight-large;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
+            color: $color-Slate-900;
+            border: none;
+            border-radius: 100vh;
+            position: relative;
+            span{
+                width: 24px;
+                height: 24px;
+                display: block;
+                background-image: url('../assets/images/icon-calculator.svg');
+                position: absolute;
+                left: 30px;
+                top: 30%;
+            }
             &:hover{
-                background-color: $color-secondary-Red;
+                background-color: hsla(61, 70%, 52%, 0.34);
             }
         }
+    }
+}
+
+.empty--results{
+    background-color: $color-Slate-900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    img{
+        width: 250px;
+        height: 250px;
+        size-adjust: cover;
+    }
+    h2{
+        font-size: $paragraph-size;
+        font-weight: $weight-large;
+        color: $color-White;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: $paragraph-size;
+        font-weight: $weight-medium;
+        color: $color-Slate-300;
+        margin-bottom: 20px;
     }
 }
