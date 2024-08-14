@@ -22,7 +22,7 @@
             size-adjust: cover;
         }
         h2{
-            font-size: $paragraph-size;
+            font-size: 2rem;
             font-weight: $weight-large;
             color: $color-White;
             margin-bottom: 20px;
@@ -32,6 +32,67 @@
             font-weight: $weight-medium;
             color: $color-Slate-300;
             margin-bottom: 20px;
+        }
+        .div-result{
+            -webkit-box-shadow: inset 0px 10px 0px 0px $color-primary-Lime;
+            -moz-box-shadow: inset 0px 10px 0px 0px $color-primary-Lime;
+            box-shadow: inset 0px 10px 0px 0px $color-primary-Lime;
+            width: 100%;
+            height: 25vh;
+            background-color: hsl(202, 56%, 12%);
+            border-radius: 10px;
+            padding: 15px;
+            .payment-result{
+                text-align: left;
+                h3{
+                    
+                    margin-top: 15px;
+                    font-size: $paragraph-size;
+                    font-weight: $weight-medium;
+                    color: $color-Slate-300;
+                    margin-bottom: 10px;
+                    
+                }
+                p::before{
+                    content: 'Q';
+                    font-size: 3rem;
+                    color: $color-primary-Lime;
+                    font-weight: $weight-large;
+                    
+                }
+                p{
+                    font-size: 3rem;
+                    color: $color-primary-Lime;
+                    font-weight: $weight-large;
+                    
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid gray;
+                }
+
+            }
+            .result-total{
+                text-align: left;
+                h3{
+                    font-size: $paragraph-size;
+                    font-weight: $weight-medium;
+                    color: $color-Slate-300;
+                    margin-bottom: 10px;
+                    
+                }
+                p::before{
+                    content: 'Q';
+                    font-size: 1.5rem;
+                    color: $color-White;
+                    font-weight: $weight-large;
+                    
+                }
+                p{
+                    font-size: 1.5rem;
+                    color: $color-White;
+                    font-weight: $weight-large;
+                    
+                }
+            }
         }
     }
     
