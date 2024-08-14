@@ -82,6 +82,14 @@
                     }
                 }
             }
+
+        }
+        .error-div{
+            border: 1px solid $color-secondary-Red !important;
+            label{
+                background-color: $color-secondary-Red !important;
+                color: white !important;
+            }
         }
         .inputs-radio--form{
             display: flex;

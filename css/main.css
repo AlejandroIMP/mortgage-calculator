@@ -81,6 +81,13 @@
   background-color: hsl(61, 70%, 52%);
   transition: 1s ease;
 }
+.calculator--section form .error-div {
+  border: 1px solid hsl(4, 69%, 50%) !important;
+}
+.calculator--section form .error-div label {
+  background-color: hsl(4, 69%, 50%) !important;
+  color: white !important;
+}
 .calculator--section form .inputs-radio--form {
   display: flex;
   flex-direction: column;

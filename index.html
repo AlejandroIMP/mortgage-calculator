@@ -34,30 +34,33 @@
           <button class="clear-button" type="reset">Clear All</button>
           <fieldset class="input-text--form">
             <legend>Mortgage Amount</legend>
-            <div>
+            <div class="input-Div">
               <label for="mortgage-amount">Q</label>
               <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="" required>
               <span class="error"></span>
             </div>
             
           </fieldset>
+          
           <article>
             <fieldset class="input-text--form">
               <legend>Mortgage Term</legend>
-              <div>
+              <div class="input-Div">
                 <input type="number" id="mortgage-term" name="mortgage-term" placeholder="" required>
                 <label for="mortgage-term">years</label>
                 <span class="error"></span>
               </div>
             </fieldset>
+            
             <fieldset class="input-text--form">
               <legend>Interest Rate</legend>
-              <div>
+              <div class="input-Div">
                 <input type="number" id="interest-rate" name="interest-rate" placeholder="" required>
-              <label for="interest-rate">%</label>
+              <label for="interest-rate">%</label>  
               <span class="error"></span>
               </div>
             </fieldset>
+            
           </article>
         
           <fieldset class="inputs-radio--form">
@@ -68,14 +71,14 @@
                 <span class="error"></span>
               </div>
               <div>
-                <input type="radio" id="interest-only" name="mortgage-type" value="interest-only">
-                <label for="interest-only">Interest Only</label>
+                <input type="radio" id="interest" name="mortgage-type" value="interest-only">
+                <label for="interest">Interest Only</label>
               </div>
             
           </fieldset>
           
     
-          <button class="button-calculate" type="button" onclick="handleClick()"><span></span>Calculate Repayments</button>
+          <button class="button-calculate" type="button" ><span></span>Calculate Repayments</button>
         </form>
 
       </section>
@@ -85,15 +88,15 @@
     
       <secton class="empty--results">
         <article>
-              <img src="./assets/images/illustration-empty.svg" alt="la imagen de un dibujo que contiene una calculadora, una tabla y un lapiz" loading="lazy">
-                <h2>Results shown here</h2>
+              <img class="img-calculator" src="./assets/images/illustration-empty.svg" alt="la imagen de un dibujo que contiene una calculadora, una tabla y un lapiz" loading="lazy">
+                <h2 class="title-result">Results shown here</h2>
             
-                <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+                <p class="paragraph-result">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
                 
         </article>
       </secton> 
     </section>
-    <srcipt src="./main.js"></srcipt>
+    <script src="main.js"></script>
   </main>
   
 
@@ -107,7 +110,7 @@
   <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
   <div>
 
-    <div>
+    <div class = 'monthly-pay'>
       <h3>Your monthly repayments</h3>
       <p>$0.00</p>
     </div>
