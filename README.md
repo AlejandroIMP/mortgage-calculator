@@ -73,7 +73,7 @@ I need to practice by developing more projects, finding new methods and new solu
 ## Author
 
 - Website - [Alejandro Sunuc](https://github.com/AlejandroIMP)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/AlejandroIMP)
+- Frontend Mentor - [@AlejandroIMP](https://www.frontendmentor.io/profile/AlejandroIMP)
 - Twitter - [@AlejandroRtw](https://x.com/AlejandroRtw)
 
 
