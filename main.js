@@ -3,7 +3,30 @@ const inputDiv = document.getElementsByClassName('input-Div"')[0];
 const image = document.getElementsByClassName('img-calculator')[0];
 const calculateButton = document.getElementsByClassName('button-calculate')[0];
 const resetAllButton = document.getElementsByClassName('clear-button')[0];
+const articleResult = document.getElementsByClassName('results-article')[0];
+const resultDiv = document.createElement('div');
+resultDiv.classList.add('div-result');
+articleResult.appendChild(resultDiv);
 
+
+const divMonthly = document.createElement('div');
+divMonthly.classList.add('payment-result');
+resultDiv.appendChild(divMonthly);
+const h3Payment = document.createElement('h3');
+h3Payment.style.textAlign = 'left';
+divMonthly.appendChild(h3Payment);
+const paragraphPayment = document.createElement('p');
+divMonthly.appendChild(paragraphPayment);
+
+const divTotal = document.createElement('div');
+divTotal.classList.add('result-total');
+resultDiv.appendChild(divTotal);
+const h3Total = document.createElement('h3');
+divTotal.appendChild(h3Total);
+const paragraphTotal = document.createElement('p');
+divTotal.appendChild(paragraphTotal);
+
+resultDiv.style.display = 'none';
 
 
 function calculateMontlyPayment(inputAmount, inputInterest, inputYears){
@@ -31,30 +54,7 @@ function calculateOnlyInterest(inputAmount, inputInterest, inputYears){
     return totalInterest;
 }
 
-const articleResult = document.getElementsByClassName('results-article')[0];
-const resultDiv = document.createElement('div');
-resultDiv.classList.add('div-result');
-articleResult.appendChild(resultDiv);
 
-
-const divMonthly = document.createElement('div');
-divMonthly.classList.add('payment-result');
-resultDiv.appendChild(divMonthly);
-const h3Payment = document.createElement('h3');
-h3Payment.style.textAlign = 'left';
-divMonthly.appendChild(h3Payment);
-const paragraphPayment = document.createElement('p');
-divMonthly.appendChild(paragraphPayment);
-
-const divTotal = document.createElement('div');
-divTotal.classList.add('result-total');
-resultDiv.appendChild(divTotal);
-const h3Total = document.createElement('h3');
-divTotal.appendChild(h3Total);
-const paragraphTotal = document.createElement('p');
-divTotal.appendChild(paragraphTotal);
-
-resultDiv.style.display = 'none';
 
 function clearResults(){
     resultDiv.style.display = 'none';

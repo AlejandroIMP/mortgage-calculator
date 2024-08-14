@@ -36,7 +36,7 @@
             <legend>Mortgage Amount</legend>
             <div class="input-Div">
               <label for="mortgage-amount">Q</label>
-              <input type="number" id="mortgage-amount" name="mortgage-amount" placeholder="" required>
+              <input pattern="[0-9]{1,}\.[0-9]{1,}" type="number" id="mortgage-amount" name="mortgage-amount" placeholder="" required>
               <span class="error"></span>
             </div>
             
@@ -46,7 +46,7 @@
             <fieldset class="input-text--form">
               <legend>Mortgage Term</legend>
               <div class="input-Div">
-                <input type="number" id="mortgage-term" name="mortgage-term" placeholder="" required>
+                <input pattern="[0-9]{1,}\.[0-9]{1,}" type="number" id="mortgage-term" name="mortgage-term" placeholder="" required>
                 <label for="mortgage-term">years</label>
                 <span class="error"></span>
               </div>
@@ -55,7 +55,7 @@
             <fieldset class="input-text--form">
               <legend>Interest Rate</legend>
               <div class="input-Div">
-                <input type="number" id="interest-rate" name="interest-rate" placeholder="" required>
+                <input pattern="[0-9]{1,}\.[0-9]{1,}" type="number" id="interest-rate" name="interest-rate" placeholder="" required>
               <label for="interest-rate">%</label>  
               <span class="error"></span>
               </div>
